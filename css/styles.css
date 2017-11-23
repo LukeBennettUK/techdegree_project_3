@@ -1,27 +1,110 @@
-/*******************************************************
-TEST
-********************************************************/
-
-/*
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: column;
-}
-*/
-
-.item-3 {
-/*  margin-right: auto;*/
+h1 {
+  text-align: center
 }
 
-/*******************************************************
-REAL
-********************************************************/
+/* Extra Normalize Settings */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 fieldset {
-  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
+
+
+
+/**************************************************************
+HEADER
+***************************************************************/
+
+/* Gutter and border styling */
+
+header {
+  margin-right: 5%;
+  margin-left: 5%;
+  border-bottom: 3px solid #000;
+}
+
+/* h2 and p header center align */
+
+header h2,
+header p {
+  text-align: center;
+}
+
+
+
+/**************************************************************
+MAIN
+***************************************************************/
+
+main {
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 2px;
+  border-top: 1.5px solid #000;
+}
+
+
+
+/**************************************************************
+CONTACT INFO
+***************************************************************/
+
+.contact-info {
+  margin-bottom: 19.92px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contact-row label {
+  margin-bottom: 10px;
+}
+
+
+/**************************************************************
+NEWSLETTER
+***************************************************************/
+
+.newsletter {
+  border-top: 2px solid #000;
+}
+
+.newsletter-row input {
+  margin: 0 15px 10px 0;
+}
+  
+/**************************************************************
+FOOTER
+***************************************************************/
+
+footer p {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
