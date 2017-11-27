@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
   </head>
   <body>
     
@@ -15,10 +16,14 @@
       
       <h1>The Code Review</h1>
       
+    </header>
+    
+    <aside>
+      
       <h2>Signup for our newsletter</h2>
       <p>Get the latest news on how your code is doing right in your inbox</p>
       
-    </header>
+    </aside>
     
     <!-- Main -->
     
@@ -32,17 +37,17 @@
         
         <fieldset class="contact-info">
            
-          <h2>Contact Information</h2>
+          <legend>Contact Information</legend>
           
           <ul>
             <li class="contact-row">
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="full_name">
+              <input type="text" id="name" name="full_name" placeholder="Required">
             </li>
 
             <li class="contact-row">
               <label for="email">Email Address</label>
-              <input type="email" id="email" name="email_address">
+              <input type="email" id="email" name="email_address" placeholder="Required">
             </li>
 
             <li class="contact-row">
@@ -80,7 +85,7 @@
         
         <fieldset class="newsletter">
             
-            <h2>Newsletter</h2>
+            <legend>Newsletter</legend>
 
             <p>Select the newsletters you would like to receive</p>
 

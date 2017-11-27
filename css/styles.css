@@ -1,5 +1,20 @@
+* {
+  font-family: 'Merriweather', sans-serif;
+  color: #2D3945;
+}
+
 h1 {
-  text-align: center
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  color: #FFF;
+}
+
+h2,
+legend {
+  color: #2D3945;
+  font-size: 1.1em;
+  font-weight: 900;
 }
 
 /* Extra Normalize Settings */
@@ -22,19 +37,31 @@ fieldset {
 HEADER
 ***************************************************************/
 
-/* Gutter and border styling */
-
 header {
-  margin-right: 5%;
-  margin-left: 5%;
-  border-bottom: 3px solid #000;
+  background: #2D3945;
+  padding: 20px;
 }
 
-/* h2 and p header center align */
 
-header h2,
-header p {
+
+/**************************************************************
+ASIDE
+***************************************************************/
+
+/* Gutter and border styling */
+
+aside {
+  border-bottom: 3px solid #2D3945;
+  margin-right: 5%;
+  margin-left: 5%;
   text-align: center;
+  padding: 20px 0;
+}
+
+aside p {
+  color: #ACAFB4;
+  font-size: 0.9em;
+  padding: 0 2%;
 }
 
 
@@ -47,7 +74,33 @@ main {
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 2px;
-  border-top: 1.5px solid #000;
+  border-top: 1.5px solid #2D3945;
+}
+
+main legend {
+  padding: 1px 0;
+}
+
+label {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+input,
+select {
+  background: #EFF0F2;
+  border-radius: 5px;
+  border-style: none;
+  padding: 17px;
+  margin-bottom: 7px;
+}
+
+input::placeholder {
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #abb0ba;
+  text-align: right;
 }
 
 
@@ -76,7 +129,7 @@ NEWSLETTER
 ***************************************************************/
 
 .newsletter {
-  border-top: 2px solid #000;
+  border-top: 2px solid #2D3945;
 }
 
 .newsletter-row input {
