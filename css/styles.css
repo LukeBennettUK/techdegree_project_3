@@ -31,6 +31,11 @@ fieldset {
   margin: 0;
 }
 
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0;
+}
 
 
 /**************************************************************
@@ -60,8 +65,8 @@ aside {
 
 aside p {
   color: #ACAFB4;
-  font-size: 0.9em;
   padding: 0 2%;
+  margin: 14.4px 0;
 }
 
 
@@ -86,6 +91,22 @@ label {
   font-weight: 300;
 }
 
+input,
+select,
+textarea {
+  background: #EFF0F2;
+  border-radius: 5px;
+  border-style: none;
+  padding: 17px;
+  margin-bottom: 7px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px solid #5b738b;
+  outline: none;
+}
 
 
 /**************************************************************
@@ -121,20 +142,6 @@ select:disabled {
   color: red;
 }
 
-input:focus,
-select:focus {
-  border: 2px solid #5b738b;
-  outline: none;
-}
-
-input,
-select {
-  background: #EFF0F2;
-  border-radius: 5px;
-  border-style: none;
-  padding: 17px;
-  margin-bottom: 7px;
-}
 
 input::placeholder {
   font-family: 'Merriweather', sans-serif;
@@ -150,19 +157,41 @@ select {
 
 
 
-
-
 /**************************************************************
 NEWSLETTER
 ***************************************************************/
 
-.newsletter {
+.newsletter legend {
+  padding: 10px 0;
+  margin-bottom: 10px;
 }
 
-.newsletter-row input {
-  margin: 0 15px 10px 0;
+.newsletter p {
+  line-height: 25px;
+  margin-bottom: 15px
 }
-  
+
+.newsletter input {
+  margin: 0 15px 15px 0;
+}
+
+#javascript_nl,
+#pt_format {
+  margin-bottom: 25px
+}
+
+textarea {
+  resize: none;
+  display: block;
+/*  width: 100%;*/
+  margin-bottom: 30px;
+}
+
+button {
+  display: flex;
+  margin: auto;
+}
+
 /**************************************************************
 FOOTER
 ***************************************************************/
