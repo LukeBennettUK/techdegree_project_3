@@ -86,25 +86,6 @@ label {
   font-weight: 300;
 }
 
-input,
-select {
-  background: #EFF0F2;
-  border-radius: 5px;
-  border-style: none;
-  padding: 17px;
-  margin-bottom: 7px;
-}
-
-input::placeholder {
-  font-family: 'Merriweather', sans-serif;
-  font-style: italic;
-  font-size: 0.8em;
-  color: #bfbfbf;
-  text-align: right;
-}
-
-
-
 
 
 /**************************************************************
@@ -127,6 +108,10 @@ CONTACT INFO
   margin-bottom: 10px;
 }
 
+.half {
+  width: 50%;
+}
+
 .contact-row label {
   margin-bottom: 10px;
 }
@@ -141,6 +126,29 @@ select:focus {
   border: 2px solid #5b738b;
   outline: none;
 }
+
+input,
+select {
+  background: #EFF0F2;
+  border-radius: 5px;
+  border-style: none;
+  padding: 17px;
+  margin-bottom: 7px;
+}
+
+input::placeholder {
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  font-size: 0.8em;
+  color: #bfbfbf;
+  text-align: right;
+}
+
+select {
+  cursor: pointer;
+}
+
+
 
 
 
