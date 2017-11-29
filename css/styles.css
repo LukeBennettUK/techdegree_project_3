@@ -99,9 +99,11 @@ input::placeholder {
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   font-size: 0.8em;
-  color: #abb0ba;
+  color: #bfbfbf;
   text-align: right;
 }
+
+
 
 
 
@@ -111,6 +113,12 @@ CONTACT INFO
 
 .contact-info {
   margin-bottom: 19.92px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #2D3945;
+}
+
+.contact-info legend {
+  padding: 25px 0;
 }
 
 .contact-row {
@@ -123,13 +131,24 @@ CONTACT INFO
   margin-bottom: 10px;
 }
 
+select:disabled {
+  font-weight: italic;
+  color: red;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid #5b738b;
+  outline: none;
+}
+
+
 
 /**************************************************************
 NEWSLETTER
 ***************************************************************/
 
 .newsletter {
-  border-top: 2px solid #2D3945;
 }
 
 .newsletter-row input {
