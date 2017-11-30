@@ -1,4 +1,4 @@
-* {
+body {
   font-family: 'Merriweather', sans-serif;
   color: #2D3945;
 }
@@ -97,8 +97,6 @@ textarea {
   background: #EFF0F2;
   border-radius: 5px;
   border-style: none;
-  padding: 17px;
-  margin-bottom: 7px;
 }
 
 input:focus,
@@ -155,6 +153,12 @@ select {
   cursor: pointer;
 }
 
+input,
+select {
+  padding: 17px ;
+  margin-bottom: 7px;
+}
+
 
 
 /**************************************************************
@@ -181,23 +185,43 @@ NEWSLETTER
 }
 
 textarea {
+  -webkit-box-sizing: border-box;
   resize: none;
   display: block;
-/*  width: 100%;*/
+  justify-content: column;
+  width: 100%;
   margin-bottom: 30px;
+  padding: 17px;
 }
 
 button {
-  display: flex;
-  margin: auto;
+  display: block;
+  border: none;
+  background: #4EBBB5;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 700;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 0;
 }
 
 /**************************************************************
 FOOTER
 ***************************************************************/
 
+footer {
+  padding: 30px;
+}
+
 footer p {
   text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  color: #bfbfbf;
 }
 
 
