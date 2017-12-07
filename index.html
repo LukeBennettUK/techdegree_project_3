@@ -13,133 +13,136 @@
     <!-- Header -->
     
     <header>
-      
+
       <h1>The Code Review</h1>
-      
+
     </header>
     
-    <aside>
+    <div class="container">
       
-      <h2>Signup for our newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
-      
-    </aside>
-    
-    <!-- Main -->
-    
-    <main>
+      <aside>
 
-      <!-- Form -->
-      
-      <form action="index.html" method="post">
-        
-        <!-- Contact Information -->
-        
-        <fieldset class="contact-info">
-           
-          <legend>Contact Information</legend>
-          
-          <ul>
-            <li class="contact-row">
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="full_name" placeholder="Required">
-            </li>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
 
-            <li class="contact-row">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email_address" placeholder="Required">
-            </li>
+      </aside>
 
-            <li class="contact-row">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone_number">
-            </li>
+      <!-- Main -->
 
-            <li class="contact-row">
-              <label for="street">Street Address</label>
-              <input type="text" id="street" name="street_address">
-            </li>
+      <main>
 
-            <li class="contact-row">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city">
-            </li>
+        <!-- Form -->
 
-            <li class="contact-row">
-              <label for="state">State</label>
-              <select id="state" name="user_state" placeholder="Choose State">
-                <option class="red" value="" disabled selected style="color: blue;"> Choose State </option>
-                <option class="red" value="new_york">New York</option>
-                <option class="red" value="california">California</option>
-              </select>
-            </li>
+        <form action="index.html" method="post">
 
-            <li class="contact-row half">
-              <label for="zip">Zip Code</label>
-              <input type="text" id="zip" name="zip_code">
-            </li>
-          </ul>
-        </fieldset>
+          <!-- Contact Information -->
 
-        <!-- Newsletter -->
-        
-        <fieldset class="newsletter">
-            
-            <legend>Newsletter</legend>
+          <fieldset class="contact-info">
 
-            <p>Select the newsletters you would like to receive</p>
+            <legend>Contact Information</legend>
 
-            <!-- Checkbox Buttons -->
             <ul>
-              <li class="newsletter-row">
-                <input type="checkbox" id="html_nl" value="html" name="html_news"><label for="html_nl">HTML News</label>
+              <li class="contact-row">
+                <label for="name">Full Name</label>
+                <input required type="text" id="name" name="full_name" placeholder="Required">
               </li>
 
-              <li class="newsletter-row">
-                <input type="checkbox" id="css_nl" value="css" name="css_news"><label for="css_nl">CSS News</label>
+              <li class="contact-row">
+                <label for="email">Email Address</label>
+                <input required type="email" id="email" name="email_address" placeholder="Required">
               </li>
 
-              <li class="newsletter-row">
-                <input type="checkbox" id="javascript_nl" value="javascript" name="javascript_news"><label for="javascript_nl">JavaScript News</label>
+              <li class="contact-row">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone_number">
+              </li>
+
+              <li class="contact-row">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" name="street_address">
+              </li>
+
+              <li class="contact-row">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+              </li>
+
+              <li class="contact-row">
+                <label for="state">State</label>
+                <select required id="state" name="user_state">
+                  <option value="" disabled selected> Choose State </option>
+                  <option value="new_york">New York</option>
+                  <option class="red" value="california">California</option>
+                </select>
+              </li>
+
+              <li class="contact-row half">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip_code">
               </li>
             </ul>
-        
-            <p>Newsletter Format</p>
+          </fieldset>
 
-            <!-- Radio Buttons -->
-            
-            <ul>
-              <li class="item 1">
-                <input type="radio" id="html_format" value="html" name="newsletter_format">
-                <label for="html_format">HTML</label>
-              </li>
-              
-              <li class="item 2">
-                <input type="radio" id="pt_format" value="plain_text" name="newsletter_format">
-                <label for="pt_format">Plain Text</label>
-              </li>
-            </ul>
-            <!-- Textarea -->
+          <!-- Newsletter -->
 
-            <p>Other topics you'd like to hear about</p>
+          <fieldset class="newsletter">
 
-            <textarea id="other" name="other_topics" rows="4"></textarea>
+              <legend>Newsletter</legend>
 
-            <button type="submit">Sign Up</button>
-            
-        </fieldset>
-        
-      </form>
+              <p>Select the newsletters you would like to receive</p>
 
-    </main>
-    
-    <!-- Footer -->
+              <!-- Checkbox Buttons -->
+              <ul>
+                <li class="newsletter-row">
+                  <input type="checkbox" id="html_nl" value="html" name="html_news"><label for="html_nl">HTML News</label>
+                </li>
 
-    <footer>
-    
-      <p><small>Copyright The Code Review</small></p>
-      
-    </footer>
-      
+                <li class="newsletter-row">
+                  <input type="checkbox" id="css_nl" value="css" name="css_news"><label for="css_nl">CSS News</label>
+                </li>
+
+                <li class="newsletter-row">
+                  <input type="checkbox" id="javascript_nl" value="javascript" name="javascript_news"><label for="javascript_nl">JavaScript News</label>
+                </li>
+              </ul>
+
+              <p>Newsletter Format</p>
+
+              <!-- Radio Buttons -->
+
+              <ul>
+                <li class="item 1">
+                  <input type="radio" id="html_format" value="html" name="newsletter_format">
+                  <label for="html_format">HTML</label>
+                </li>
+
+                <li class="item 2">
+                  <input type="radio" id="pt_format" value="plain_text" name="newsletter_format">
+                  <label for="pt_format">Plain Text</label>
+                </li>
+              </ul>
+
+              <!-- Textarea -->
+
+              <p>Other topics you'd like to hear about</p>
+
+              <textarea id="other" name="other_topics"></textarea>
+
+              <button type="submit">Sign Up</button>
+
+          </fieldset>
+
+        </form>
+
+      </main>
+
+      <!-- Footer -->
+
+      <footer>
+
+        <p><small>Copyright The Code Review</small></p>
+
+      </footer>
+    </div>
   </body>
 </html>

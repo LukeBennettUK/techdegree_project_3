@@ -94,6 +94,7 @@ label {
 input,
 select,
 textarea {
+  font-family: 'Merriweather', sans-serif;
   background: #EFF0F2;
   border-radius: 5px;
   border-style: none;
@@ -122,27 +123,32 @@ CONTACT INFO
 }
 
 .contact-row {
+/*
   display: flex;
   flex-direction: column;
+*/
   margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
 }
 
 .half {
   width: 50%;
+  max-width: 200px;
 }
 
 .contact-row label {
   margin-bottom: 10px;
 }
 
-select:disabled {
-  font-weight: italic;
-  color: red;
-}
-
-
 input::placeholder {
-  font-family: 'Merriweather', sans-serif;
   font-style: italic;
   font-size: 0.8em;
   color: #bfbfbf;
@@ -155,8 +161,21 @@ select {
 
 input,
 select {
-  padding: 17px ;
+  padding: 17px 10px;
   margin-bottom: 7px;
+}
+
+/* Select Box */
+
+select,
+select option {
+  color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #bfbfbf;
+  font-size: 0.8rem;
 }
 
 
@@ -185,10 +204,9 @@ NEWSLETTER
 }
 
 textarea {
-  -webkit-box-sizing: border-box;
+/*  -webkit-box-sizing: border-box;*/
+  height: 110px;
   resize: none;
-  display: block;
-  justify-content: column;
   width: 100%;
   margin-bottom: 30px;
   padding: 17px;
@@ -208,6 +226,8 @@ button {
   padding: 20px 0;
 }
 
+
+
 /**************************************************************
 FOOTER
 ***************************************************************/
@@ -226,9 +246,130 @@ footer p {
 
 
 
+/**************************************************************
+MEDIA QUERIES
+***************************************************************/
 
-
-
+@media screen and (min-width: 768px) {
+  
+  .container {
+    font-size: 100%;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Header */
+  
+  header {
+    padding: 10px;
+    font-size: 0.5em;
+  }
+  
+  /* Aside */
+  
+  aside {
+    padding-top: 35px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  aside h2 {
+    font-size: 0.9em;
+    margin-bottom: 8px;
+  }
+  
+  aside p {
+    font-size: 0.54em;
+    margin-top: 0;
+    margin-bottom: 20px
+  }
+  
+  /* Main */
+  
+  main {
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  /* Aside has border-bottom, main has border top */
+  
+/*   Contact Info Section   */
+  
+  legend {
+    font-size: 0.75rem;
+  }
+  
+  label {
+    font-size: 0.55rem;
+  }
+  
+  /* Flexbox */
+  
+  .contact-row {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .contact-row input:not(#zip),
+  .contact-row select {
+    width: 66%;
+  }
+  
+  input[id="zip"] {
+    width: 20%;
+    margin-right: 46.5%;
+  }
+  
+  .contact-row label {
+    align-self: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Input and Select font sizes */
+  
+  input,
+  select {
+    font-size: 0.55rem;
+    padding: 10px
+  }
+  
+  select:invalid,
+  select option[value=""] {
+    font-size: 0.55rem;
+  }
+  
+  input::placeholder {
+    font-size: 0.4rem;
+  }
+  
+  /* .half normalize */
+  
+  .half {
+    width: 100%;
+    max-width: none;
+  }
+  
+}
 
 
 
