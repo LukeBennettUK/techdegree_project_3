@@ -123,16 +123,9 @@ CONTACT INFO
 }
 
 .contact-row {
-/*
   display: flex;
   flex-direction: column;
-*/
   margin-bottom: 10px;
-}
-
-input,
-select {
-  width: 100%;
 }
 
 label {
@@ -161,7 +154,7 @@ select {
 
 input,
 select {
-  padding: 17px 10px;
+  padding: 17px;
   margin-bottom: 7px;
 }
 
@@ -204,7 +197,7 @@ NEWSLETTER
 }
 
 textarea {
-/*  -webkit-box-sizing: border-box;*/
+  -webkit-box-sizing: border-box;
   height: 110px;
   resize: none;
   width: 100%;
@@ -302,6 +295,7 @@ MEDIA QUERIES
   
   label {
     font-size: 0.55rem;
+    align-self: center;
   }
   
   /* Flexbox */
@@ -311,9 +305,12 @@ MEDIA QUERIES
     justify-content: space-between;
   }
   
-  .contact-row input:not(#zip),
-  .contact-row select {
+  .contact-row input:not(#zip) {
     width: 66%;
+  }
+  
+  .contact-row select {
+    width: 71%;
   }
   
   input[id="zip"] {
@@ -321,36 +318,12 @@ MEDIA QUERIES
     margin-right: 46.5%;
   }
   
-  .contact-row label {
-    align-self: center;
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   /* Input and Select font sizes */
   
   input,
   select {
     font-size: 0.55rem;
-    padding: 10px
+    padding: 10px;
   }
   
   select:invalid,
@@ -362,12 +335,43 @@ MEDIA QUERIES
     font-size: 0.4rem;
   }
   
-  /* .half normalize */
+  /* zip code .half normalize */
   
   .half {
     width: 100%;
     max-width: none;
   }
+  
+  /* Newsletter Section */
+  
+  .newsletter p {
+    font-size: 0.65rem;
+  }
+  
+  .newsletter input {
+    vertical-align: top;
+  }
+  
+  .newsletter-row {
+    display: flex;
+  }
+  
+  .newsletter-row label {
+/*    margin-bottom: 17px;*/
+  }
+  
+  .wrapper {
+      display: table;
+      vertical-align: middle;
+    }
+
+  .custom-control-indicator {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      top:0;
+    }
+  
   
 }
 
