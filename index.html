@@ -54,17 +54,17 @@
 
               <li class="contact-row">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone_number">
+                <input required type="tel" id="phone" name="phone_number" placeholder="Required">
               </li>
 
               <li class="contact-row">
                 <label for="street">Street Address</label>
-                <input type="text" id="street" name="street_address">
+                <input required type="text" id="street" name="street_address" placeholder="Required">
               </li>
 
               <li class="contact-row">
                 <label for="city">City</label>
-                <input type="text" id="city" name="city">
+                <input required type="text" id="city" name="city" placeholder="Required">
               </li>
 
               <li class="contact-row">
@@ -78,7 +78,7 @@
 
               <li class="contact-row half">
                 <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="zip_code">
+                <input required type="text" id="zip" name="zip_code" placeholder="Required">
               </li>
             </ul>
           </fieldset>
@@ -124,8 +124,7 @@
 
               <!-- Textarea -->
 
-              <p>Other topics you'd like to hear about</p>
-
+              <label for="other">Other topics you'd like to hear about</label>
               <textarea id="other" name="other_topics"></textarea>
 
               <button type="submit">Sign Up</button>

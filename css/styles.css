@@ -5,6 +5,11 @@
 body {
   font-family: 'Merriweather', sans-serif;
   color: #2D3945;
+  background: #EFF0F2;
+}
+
+.container {
+  background: white;
 }
 
 h1 {
@@ -42,7 +47,7 @@ p {
 }
 
 
-/**************************************************************
+/*************************************************************
 HEADER
 ***************************************************************/
 
@@ -102,14 +107,19 @@ textarea {
   background: #EFF0F2;
   border-radius: 5px;
   border-style: none;
+/*  transition: border 1s, background 1s;*/
 }
 
 input:focus,
 select:focus,
 textarea:focus {
   border: 2px solid #5b738b;
+  background: lightyellow;
+  transition: border .5s, background 1s;
   outline: none;
 }
+
+
 
 
 /**************************************************************
@@ -146,7 +156,8 @@ input::placeholder {
   text-align: right;
 }
 
-select {
+select,
+button {
   cursor: pointer;
 }
 
@@ -209,6 +220,10 @@ textarea {
   padding: 17px;
 }
 
+label[for="other"] {
+    margin: 25px 0 15px 0;
+  }
+
 button {
   border: none;
   background: #4EBBB5;
@@ -251,7 +266,7 @@ MEDIA QUERIES
   
   .container {
     font-size: 100%;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
   }
   
@@ -266,8 +281,6 @@ MEDIA QUERIES
   
   aside {
     padding-top: 35px;
-    margin-left: 25%;
-    margin-right: 25%;
   }
   
   aside h2 {
@@ -285,8 +298,6 @@ MEDIA QUERIES
   
   main {
     padding-top: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
   }
   
   /* Aside has border-bottom, main has border top */
@@ -351,6 +362,11 @@ MEDIA QUERIES
   
   .newsletter p {
     font-size: 0.65rem;
+  }
+  
+  label[for="other"] {
+    
+    margin: 20px 0 10px 0;
   }
   
   textarea {
