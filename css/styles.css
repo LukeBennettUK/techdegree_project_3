@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Merriweather', sans-serif;
   color: #2D3945;
@@ -44,7 +48,7 @@ HEADER
 
 header {
   background: #2D3945;
-  padding: 20px;
+  padding: 10px;
 }
 
 
@@ -123,13 +127,7 @@ CONTACT INFO
 }
 
 .contact-row {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 10px;
-}
-
-label {
-  display: inline-block;
 }
 
 .half {
@@ -152,8 +150,13 @@ select {
   cursor: pointer;
 }
 
-input,
+label {
+  display: block;
+}
+
+.contact-row input,
 select {
+  width: 100%;
   padding: 17px;
   margin-bottom: 7px;
 }
@@ -168,7 +171,7 @@ select option {
 select:invalid,
 select option[value=""] {
   color: #bfbfbf;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 
@@ -187,17 +190,18 @@ NEWSLETTER
   margin-bottom: 15px
 }
 
-.newsletter input {
-  margin: 0 15px 15px 0;
+.newsletter-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px
 }
 
-#javascript_nl,
-#pt_format {
-  margin-bottom: 25px
+.newsletter input {
+  margin-right: 15px;
 }
 
 textarea {
-  -webkit-box-sizing: border-box;
   height: 110px;
   resize: none;
   width: 100%;
@@ -206,17 +210,16 @@ textarea {
 }
 
 button {
-  display: block;
   border: none;
   background: #4EBBB5;
   font-family: 'Merriweather', sans-serif;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   letter-spacing: 0.5px;
   color: #fff;
   width: 100%;
   border-radius: 5px;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 
@@ -235,6 +238,7 @@ footer p {
   font-weight: 400;
   font-style: italic;
   color: #bfbfbf;
+  margin-bottom: 150px;
 }
 
 
@@ -301,38 +305,39 @@ MEDIA QUERIES
   /* Flexbox */
   
   .contact-row {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
   }
   
-  .contact-row input:not(#zip) {
-    width: 66%;
-  }
-  
-  .contact-row select {
-    width: 71%;
+  .contact-row input:not(#zip),
+  select {
+    width: 75%;
   }
   
   input[id="zip"] {
-    width: 20%;
-    margin-right: 46.5%;
+    width: 25%;
+    margin-right: 50%;
   }
   
-  /* Input and Select font sizes */
+  /* Input and Select font sizes and padding */
   
-  input,
+  .contact-row input,
   select {
     font-size: 0.55rem;
-    padding: 10px;
+    padding: 13px
   }
+  
+  /* Select placeholder font size */
   
   select:invalid,
   select option[value=""] {
     font-size: 0.55rem;
   }
   
+  /* Input placeholder font size */
+  
   input::placeholder {
-    font-size: 0.4rem;
+    font-size: 0.5rem;
   }
   
   /* zip code .half normalize */
@@ -348,30 +353,26 @@ MEDIA QUERIES
     font-size: 0.65rem;
   }
   
-  .newsletter input {
-    vertical-align: top;
+  textarea {
+    height: 75px;
+    margin-bottom: 20px;
+    font-size: 0.55rem;
   }
   
-  .newsletter-row {
-    display: flex;
+  button {
+    padding: 12px;
+    font-size: 0.8rem;
   }
   
-  .newsletter-row label {
-/*    margin-bottom: 17px;*/
+  /* FOOTER */
+  
+  footer {
+    padding: 20px
   }
   
-  .wrapper {
-      display: table;
-      vertical-align: middle;
-    }
-
-  .custom-control-indicator {
-      display: inline-block;
-      vertical-align: middle;
-      position: relative;
-      top:0;
-    }
-  
+  footer p {
+    font-size: 0.8rem;
+  }
   
 }
 
