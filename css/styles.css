@@ -12,10 +12,13 @@ body {
   background: white;
 }
 
+/* h1 Colour and styling */
+
 h1 {
   text-transform: uppercase;
   text-align: center;
   font-size: 1.2em;
+/*  color: #FFF;*/
   color: #FFF;
 }
 
@@ -51,8 +54,11 @@ p {
 HEADER
 ***************************************************************/
 
+/* Header section background colour and padding */
+
 header {
-  background: #2D3945;
+/*  background: #2D3945;*/
+  background: lightblue;
   padding: 10px;
 }
 
@@ -62,15 +68,18 @@ header {
 ASIDE
 ***************************************************************/
 
-/* Gutter and border styling */
+/* Gutter and border styling for aside */
 
 aside {
-  border-bottom: 3px solid #2D3945;
+/*  border-bottom: 3px solid #2D3945;*/
+  border-bottom: 3px solid lightblue;
   margin-right: 5%;
   margin-left: 5%;
   text-align: center;
   padding: 20px 0;
 }
+
+/* Aside paragraph styling */
 
 aside p {
   color: #ACAFB4;
@@ -84,21 +93,30 @@ aside p {
 MAIN
 ***************************************************************/
 
+/* Main gutter and top border */
+
 main {
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 2px;
-  border-top: 1.5px solid #2D3945;
+/*  border-top: 1.5px solid #2D3945;*/
+  border-top: 1.5px solid lightblue;
 }
 
-main legend {
-  padding: 1px 0;
-}
+/* Label font styling */
 
 label {
   font-size: 0.9em;
   font-weight: 300;
 }
+
+/* Block styling to seperate from textarea */
+
+label {
+  display: block;
+}
+
+/* Input, Select and textarea box styling */
 
 input,
 select,
@@ -107,18 +125,20 @@ textarea {
   background: #EFF0F2;
   border-radius: 5px;
   border-style: none;
-/*  transition: border 1s, background 1s;*/
+  transition: border .5s ease-in-out, background .1s ease-in-out;
+  border: 2px solid transparent;
 }
+
+/* Focus states for input, select and textarea */
 
 input:focus,
 select:focus,
 textarea:focus {
-  border: 2px solid #5b738b;
-  background: lightyellow;
-  transition: border .5s, background 1s;
+/*  border: 2px solid #5b738b;*/
+  border: 2px solid lightblue;
+  background: #fff;
   outline: none;
 }
-
 
 
 
@@ -126,44 +146,25 @@ textarea:focus {
 CONTACT INFO
 ***************************************************************/
 
-.contact-info {
-  margin-bottom: 19.92px;
-  padding-bottom: 15px;
-  border-bottom: 2px solid #2D3945;
-}
+/* Legend padding contact form */
 
 .contact-info legend {
   padding: 25px 0;
 }
 
-.contact-row {
-  margin-bottom: 10px;
-}
-
-.half {
-  width: 50%;
-  max-width: 200px;
-}
+/* LABEL 320px - vertical spacing. 768px - vertical Center Label */
 
 .contact-row label {
   margin-bottom: 10px;
 }
 
-input::placeholder {
-  font-style: italic;
-  font-size: 0.8em;
-  color: #bfbfbf;
-  text-align: right;
+/* input and select field vertical spacing */
+
+.contact-row {
+  margin-bottom: 8px;
 }
 
-select,
-button {
-  cursor: pointer;
-}
-
-label {
-  display: block;
-}
+/* Contact Form input and select styling */
 
 .contact-row input,
 select {
@@ -172,17 +173,52 @@ select {
   margin-bottom: 7px;
 }
 
-/* Select Box */
+/* input placeholder */
+
+input::placeholder {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #bfbfbf;
+  color: #a6a6a6;
+  text-align: right;
+}
+
+/* Cursor style */
+
+select,
+button {
+  cursor: pointer;
+}
+
+/* Select Box dropdown option color */
 
 select,
 select option {
   color: #000;
 }
 
+/* "Choose State" Visual unselected colour and font-size */
+
 select:invalid,
 select option[value=""] {
   color: #bfbfbf;
   font-size: 0.9rem;
+}
+
+/* zip code input box sizing */
+
+.half {
+  width: 50%;
+  max-width: 200px;
+}
+
+/* Bottom Border Styling */
+
+.contact-info {
+  margin-bottom: 19.92px;
+  padding-bottom: 15px;
+/*  border-bottom: 2px solid #2D3945;*/
+  border-bottom: 2px solid lightblue;
 }
 
 
@@ -191,26 +227,41 @@ select option[value=""] {
 NEWSLETTER
 ***************************************************************/
 
+/* Legend styling */
+
 .newsletter legend {
   padding: 10px 0;
   margin-bottom: 10px;
 }
+
+/* Paragraph styling */
 
 .newsletter p {
   line-height: 25px;
   margin-bottom: 15px
 }
 
+/* Input alignment and styling */
+
 .newsletter-row {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   margin-bottom: 15px
 }
 
+/* Input and label horizontal spacing */
+
 .newsletter input {
   margin-right: 15px;
 }
+
+/* Textarea label styling */
+
+label[for="other"] {
+  margin: 25px 0 15px 0;
+}
+
+/* Textarea styling */
 
 textarea {
   height: 110px;
@@ -220,13 +271,12 @@ textarea {
   padding: 17px;
 }
 
-label[for="other"] {
-    margin: 25px 0 15px 0;
-  }
+/* Button styling */
 
 button {
   border: none;
-  background: #4EBBB5;
+/*  background: #4EBBB5;*/
+  background: lightblue;
   font-family: 'Merriweather', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
@@ -243,9 +293,13 @@ button {
 FOOTER
 ***************************************************************/
 
+/* Spacing around paragraph */
+
 footer {
   padding: 30px;
 }
+
+/* Footer paragraph styling */
 
 footer p {
   text-align: center;
@@ -264,29 +318,41 @@ MEDIA QUERIES
 
 @media screen and (min-width: 768px) {
   
+  /* container width and centering */
+  
   .container {
-    font-size: 100%;
     max-width: 500px;
     margin: auto;
   }
   
-  /* Header */
+  
+  
+  /************* HEADER SECTION ***************/
+  
+  /* Font-size Styling */
   
   header {
-    padding: 10px;
     font-size: 0.5em;
   }
   
-  /* Aside */
+  
+  
+  /*************** Aside *********************/
+  
+  /* Top-padding */
   
   aside {
     padding-top: 35px;
   }
   
+  /* h2 Styling and bottom-margin */
+  
   aside h2 {
     font-size: 0.9em;
     margin-bottom: 8px;
   }
+  
+  /* Aside paragraph styling */
   
   aside p {
     font-size: 0.54em;
@@ -294,7 +360,11 @@ MEDIA QUERIES
     margin-bottom: 20px
   }
   
-  /* Main */
+  
+  
+  /****************** Main ********************/
+  
+  /* Top-Padding */
   
   main {
     padding-top: 10px;
@@ -302,16 +372,9 @@ MEDIA QUERIES
   
   /* Aside has border-bottom, main has border top */
   
-/*   Contact Info Section   */
   
-  legend {
-    font-size: 0.75rem;
-  }
   
-  label {
-    font-size: 0.55rem;
-    align-self: center;
-  }
+  /*****************   Contact Info Section   ***********/
   
   /* Flexbox */
   
@@ -320,14 +383,24 @@ MEDIA QUERIES
     justify-content: space-between;
   }
   
+  /* Legend title font-size */
+  
+  legend {
+    font-size: 0.75rem;
+  }
+  
+  /* label centering and font-size */
+  
+  label {
+    font-size: 0.55rem;
+    align-self: center;
+  }
+  
+  /* input and select box width */
+  
   .contact-row input:not(#zip),
   select {
     width: 75%;
-  }
-  
-  input[id="zip"] {
-    width: 25%;
-    margin-right: 50%;
   }
   
   /* Input and Select font sizes and padding */
@@ -338,17 +411,17 @@ MEDIA QUERIES
     padding: 13px
   }
   
+  /* Input placeholder font size */
+  
+  input::placeholder {
+    font-size: 0.5rem;
+  }
+  
   /* Select placeholder font size */
   
   select:invalid,
   select option[value=""] {
     font-size: 0.55rem;
-  }
-  
-  /* Input placeholder font size */
-  
-  input::placeholder {
-    font-size: 0.5rem;
   }
   
   /* zip code .half normalize */
@@ -358,16 +431,30 @@ MEDIA QUERIES
     max-width: none;
   }
   
-  /* Newsletter Section */
+  /* Zip code input seperate styling */
+  
+  input[id="zip"] {
+    width: 25%;
+    margin-right: 50%;
+  }
+  
+  
+  
+  /*************** Newsletter Section ***************/
+  
+  /* Paragraph font-size */
   
   .newsletter p {
     font-size: 0.65rem;
   }
   
+  /* textarea label spacing */
+  
   label[for="other"] {
-    
     margin: 20px 0 10px 0;
   }
+  
+  /* textarea styling */
   
   textarea {
     height: 75px;
@@ -375,16 +462,22 @@ MEDIA QUERIES
     font-size: 0.55rem;
   }
   
+  /* Button styling */
+  
   button {
     padding: 12px;
     font-size: 0.8rem;
   }
   
-  /* FOOTER */
+  /**************** FOOTER *********************/
+  
+  /* Footer paragraph padding */
   
   footer {
     padding: 20px
   }
+  
+  /* Footer paragraph font-size */
   
   footer p {
     font-size: 0.8rem;
