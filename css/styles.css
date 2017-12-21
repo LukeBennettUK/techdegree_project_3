@@ -158,24 +158,35 @@ CONTACT INFO
   margin-bottom: 10px;
 }
 
+/* Contact Form input and select styling */
+
+.contact-row input,
+select {
+  height: 56px;
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 7px;
+}
+
 /* input and select field vertical spacing */
 
 .contact-row {
   margin-bottom: 8px;
 }
 
-/* Contact Form input and select styling */
-
-.contact-row input,
-select {
-  width: 100%;
-  padding: 17px;
-  margin-bottom: 7px;
-}
-
 /* input placeholder */
 
 input::placeholder {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #bfbfbf;
+  color: #a6a6a6;
+  text-align: right;
+}
+
+/* IE Placeholder */
+
+input:-ms-input-placeholder {
   font-style: italic;
   font-size: 0.8em;
   color: #bfbfbf;
@@ -403,10 +414,11 @@ MEDIA QUERIES
     width: 75%;
   }
   
-  /* Input and Select font sizes and padding */
+  /* Input and Select font sizes, padding and height */
   
   .contact-row input,
   select {
+    height: 40px;
     font-size: 0.55rem;
     padding: 13px
   }
